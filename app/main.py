@@ -1,10 +1,6 @@
 class Car:
-    def __init__(
-            self,
-            comfort_class: int,
-            clean_mark: int,
-            brand: str
-    ) -> None:
+    def __init__(self, comfort_class: int, clean_mark: int, brand: str
+                 ) -> None:
         self.comfort_class = comfort_class
         self.clean_mark = clean_mark
         self.brand = brand
@@ -33,7 +29,6 @@ class CarWashStation:
             )
             return round(price, 1)
         return 0.0
-
 
     def wash_single_car(self, car: Car) -> int:
         if car.clean_mark < self.clean_power:
